@@ -4,8 +4,43 @@
     <meta charset="utf-8">
     <title>Book Review</title>
   </head>
-  <body>
+  <header>
     <h1>Book Review</h1>
+    <nav>
+      <ul>
+        <li><a href="{{home}}">Home</a>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <div class="Register">
+      <h1>Register</h1>
+      <form class="" action="index.html" method="post">
+        {% csrf_token %}
+        <input type="TextField" name="" value="">
+        <input type="Text" name="" value="">
+        <input type="Submit" name="Login" value="Login">
+      </form>
+    </div>
+    <div class="Login">
+
+      <h1>Login</h1>
+      <p>Exsisting Members Login here!</p>
+      <form class="" action="index.html" method="post">
+        {% csrf_token %}
+        <input type="TextField" name="" value="">
+        <input type="Text" name="" value="">
+        <input type="Submit" name="" value="Login">
+      </form>
+
+
+    </div>
+
 
   </body>
+  <footer>
+    <p>Dan Brown</p>
+  </footer>
 </html>
