@@ -1,0 +1,23 @@
+User
+  name- charfield
+  email- charfield
+  password - charfield
+  created at- datetime
+  updated at -datetime
+
+  books many to many
+    title - charfield
+    author- fk(author)
+    timestamps
+
+
+  authors one to many
+    name - charfield
+    timestamps
+
+  review
+    review-textfield
+    rating- intgerfield
+    user- fk(user)
+    book- fk(book)
+    timestamps
