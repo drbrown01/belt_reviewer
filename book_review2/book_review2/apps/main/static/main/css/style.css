@@ -17,6 +17,13 @@ footer {
 h1 {
 
 }
-Register {
+.Register {
+  display: inline-block;
+  padding: 10px;
+}
 
+fieldset {
+  border: 1px red solid;
+  width: auto;
+  margin: auto;
 }

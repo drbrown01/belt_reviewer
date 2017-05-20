@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% load staticfiles %}
-    <meta charset="utf-8">
-    <title>Book Review</title>
-    <link rel="stylesheet" href="{% static 'main/css/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
-
+      {% load staticfiles %}
+      <meta charset="utf-8">
+      <title>Book Review</title>
+      <link rel="stylesheet" href="{% static 'main/css/css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  </head>
+<!-- ******************************************************************************* -->
   </head>
   <header>
     <h1>Book Review</h1>
-    <div class='navbar navbar-default navbar-static-top text-center'>
-      <img src="" alt="">
-      <ul class='nav navbar-nav'>
-        <li><a href="{{'home'}}" class=>Home</a></li>
-        <li><a href="{{'success'}}" class=>Index</a></li>
-        <li><a href="{{'success'}}" class=>Success</a></li>
-      </ul>
-    </div>
-  </header>
-  <body>
-    <div class="Register">
-      <h1>Register</h1>
-      <form class="" action="index.html" method="post">
-        {% csrf_token %}
-        <input type="TextField" name="" value="">
-        <input type="Text" name="" value="">
-        <input type="Submit" name="Login" value="Login">
-      </form>
-    </div>
+      <div class='navbar navbar-default navbar-static-top text-center'>
+        <img src="" alt="">
+          <ul class='nav navbar-nav'>
+              <li><a href="{{'home'}}" class=>Home</a></li>
+              <li><a href="{{'success'}}" class=>Index</a></li>
+              <li><a href="{{'success'}}" class=>Success</a></li>
+          </ul>
+      </div>
+  </header><!-- ************************************************************************************************ -->
+
+  <body class="container" role="main">
+<!-- ************************************************************************************************ -->
+      <div class="Register">
+          <h1r</h1>
+          <form class="" action="index.html" method="post">
+            <fieldset class='col-md-4'>
+              <legend>Register</legend>
+                  {% csrf_token %}
+                  First name:<br>
+                  <input type="TextField" name="Fname" value="" >
+                  Last name:<br>
+                  <input type="Text" name="Lname" value="">
+                  Email:<br>
+                  <input type="Text" name="email" value="">
+                  Birthdate:<br>
+                  <input type="datetime" name="bd" value="">
+                  First name:<br>
+                  <input type="Text" name="" value="">
+                  <input type="Submit" name="Login" value="Register">
+              </fieldset>
+          </form>
+      </div>
+<!-- ************************************************************************************************ -->
+
     <div class="Login">
 
-      <h1>Login</h1>
+
       <p>Exsisting Members Login here!</p>
       <form class="" action="index.html" method="post">
         {% csrf_token %}
-        <input type="TextField" name="" value="">
-        <input type="Text" name="" value="">
-        <input type="Submit" name="" value="Login">
+        <fieldset>
+          <legend>Login</legend>
+            <input type="TextField" name="" value="">
+            <input type="Text" name="" value="">
+            <input type="Submit" name="" value="Login">
+        </fieldset>
       </form>
 
 
