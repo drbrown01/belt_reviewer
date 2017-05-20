@@ -5,7 +5,7 @@ def index(request):
     return render(request, "main/index.html")
 
 def home(request):
-    return redirect(request, "main/home.html")
+    return render(request, "main/home.html")
 
 def success(request):
     return render(request, 'main/success.html')
