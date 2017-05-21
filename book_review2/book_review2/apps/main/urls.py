@@ -4,12 +4,12 @@ from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index),
-    url(r'^index/', views.index),
+    url(r'^$', views.index, name='index'),
+    url(r'^index/', views.index, name='index'),
     url(r'^home/$', views.home),
     url(r'^home/success/$', views.success),
     url(r'^success/home/$', views.home),
-    url(r'^success/$', views.success),
-    url(r'^reviews/$', views.reviews),
-    url(r'^account/$', views.account),
+    url(r'^success/$', views.success, name='success'),
+    url(r'^reviews/$', views.reviews, name='reviews'),
+    url(r'^account/$', views.account, name='account'),
 ]
