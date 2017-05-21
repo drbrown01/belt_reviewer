@@ -13,7 +13,7 @@
     <h1>Book Review</h1>
       <div class='navbar navbar-default navbar-static-top text-center'>
         <img src="" alt="">
-          <ul class='nav navbar-nav'>
+          <ul class='nav navbar-nav navbar-right'>
               <li><a href="{{'home'}}" class=>Home</a></li>
               <li><a href="{{'success'}}" class=>Index</a></li>
               <li><a href="{{'success'}}" class=>Success</a></li>
@@ -23,10 +23,11 @@
 
   <body class="container" role="main">
 <!-- ************************************************************************************************ -->
+<body>
       <div class="Register">
           <h1r</h1>
           <form class="" action="index.html" method="post">
-            <fieldset class='col-md-4'>
+            <fieldset class='col-md-9'>
               <legend>Register</legend>
                   {% csrf_token %}
                   First name:<br>
@@ -39,7 +40,7 @@
                   <input type="datetime" name="bd" value="">
                   First name:<br>
                   <input type="Text" name="" value="">
-                  <input type="Submit" name="Login" value="Register">
+                  <input class="btn btn-primary" type="Submit" name="Login" value="Register">
               </fieldset>
           </form>
       </div>
@@ -48,14 +49,16 @@
     <div class="Login">
 
 
-      <p>Exsisting Members Login here!</p>
+      <p>Already Registered? Login here! </p>
       <form class="" action="index.html" method="post">
         {% csrf_token %}
-        <fieldset>
+        <fieldset class='col-md-9'>
           <legend>Login</legend>
+          User Name <br>
             <input type="TextField" name="" value="">
+          Password <br>
             <input type="Text" name="" value="">
-            <input type="Submit" name="" value="Login">
+            <input class="btn btn-primary" type="Submit" name="" value="Login">
         </fieldset>
       </form>
 
@@ -64,7 +67,7 @@
 
 
   </body>
-  <footer>
+  <footer class='col-md-12'>
     <p>Dan Brown</p>
   </footer>
 </html>

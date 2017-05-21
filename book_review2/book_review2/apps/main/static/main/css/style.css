@@ -5,7 +5,7 @@
 
 }
 body {
-
+   background-image: url('main/img/books.jpg');
 
 }
 header{
@@ -20,10 +20,17 @@ h1 {
 .Register {
   display: inline-block;
   padding: 10px;
+  margin: auto;
 }
 
 fieldset {
   border: 1px red solid;
-  width: auto;
+  /*width: auto;*/
+  margin: auto;
+  padding: 15px;
+}
+.Login{
+  display: inline-block;
+  padding: 10px;
   margin: auto;
 }

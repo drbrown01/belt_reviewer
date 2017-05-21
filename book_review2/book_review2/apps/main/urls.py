@@ -7,6 +7,7 @@ urlpatterns = [
     url(r'^$', views.index),
     url(r'^index/', views.index),
     url(r'^home/$', views.home),
-    url(r'^home/success$', views.success),
+    url(r'^home/success/$', views.success),
+    url(r'^success/home/$', views.home),
     url(r'^success/$', views.success),
 ]
