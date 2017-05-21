@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     {% load staticfiles %}
-    <link rel="stylesheet" href="{% static 'main/css/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'main/css/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
     <title>Home Page</title>
   </head>
   <header>
-    <div class="class='navbar navbar-default navbar-static-top text-center'">
+    <nav class="class='navbar navbar-default navbar-static-top text-center'">
       <ul class='nav navbar-nav navbar-left'>
         <li><a href={{'/'}}>Index</a></li>
         <li><a href="{{'success'}}">Success</a></li>
-    </div>
+        <li><a href="{{'reviews'}}">Reviews</a></li>
+      </ul>
+        
+    </nav>
 
 
   </header>
