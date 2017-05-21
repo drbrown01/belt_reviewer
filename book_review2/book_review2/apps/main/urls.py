@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^home/success/$', views.success),
     url(r'^success/home/$', views.home),
     url(r'^success/$', views.success),
+    url(r'^reviews/$', views.success),
 ]

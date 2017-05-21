@@ -10,3 +10,6 @@ def home(request):
 
 def success(request):
     return render(request, 'main/success.html')
+
+def reviews(request):
+    return render(request, 'main/reviews.html')
