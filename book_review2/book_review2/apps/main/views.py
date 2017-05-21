@@ -13,3 +13,9 @@ def success(request):
 
 def reviews(request):
     return render(request, 'main/reviews.html')
+
+def account(request):
+    return render(request, 'main/account.html')
+
+def logout(request):
+    return render(request, 'main/logout.html')
