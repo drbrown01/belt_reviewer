@@ -52,11 +52,11 @@
 
 
       <p>Already Registered? Login here! </p>
-      <form class="" action="index.html" method="post">
+      <form class="" action="/users" method="post">
         {% csrf_token %}
         <fieldset class='col-md-9'>
           <legend>Login</legend>
-          User Name <br>
+          <label for="login">Login</label>
             <input type="TextField" name="" value="">
           Password <br>
             <input type="Text" name="" value="">
