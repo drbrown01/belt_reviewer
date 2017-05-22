@@ -9,33 +9,37 @@
   </head>
   <!-- *****end of head -->
   <header>
-    <nav>
+    <nav class="class='navbar navbar-default navbar-static-top text-center'">
         <ul class='nav navbar-nav navbar-right'>
-          <li><a href="{{'/'}}">Index</a></li>
-          <li><a href="{{'home'}}">Home</a></li>
-          <li><a href="{{'success'}}">Success</a></li>
-          <li><a href="{{'reviews'}}">Reviews</a></li>
+
+          <li><a href='/'>Index</a></li>
+          <li><a href='/home'>Home</a></li>
+          <li><a href='/success'>Success</a></li>
+          <!-- <li><a href='/reviews'>Reviews</a></li> -->
+          <li ><a  href="/account">My Account</a></li>
+          <li><a href="/logout">Log Out</a></li>
         </ul >
-      <h1>My Account</h1>
+
     </nav>
   </header>
   <!-- *****end of header -->
   <body>
     <div class="container">
-      <form class="textarea" action="index.html" method="post">
+        <h1 class='row'>My Account</h1>
+      <form class="col-md-12" action="index.html" method="post">
         Enter Review here <br>
         <input type="textarea" name="" value="">
 
       </form>
-
+<span class='glyphicon glyphicon-user'></span>
     </div>
   </body>
   <!-- *****end of body -->
   <footer class='navbar navbar-default navbar-static-bottom text-center'>
       <ul class='nav navbar-nav navbar-right'>
-        <li><a href="{{"contact"}}">Contact Us</a></li>
-        <li><a href="{{"about"}}">About Us</a></li>
-        <li><a href="{{"index"}}">index</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/index">index</a></li>
 
       </ul>
   </footer>
